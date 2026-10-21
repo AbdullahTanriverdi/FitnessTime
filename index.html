@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Time İzmit</title>
+    <!-- Font Awesome İkon Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <a href="#" class="logo">FİTNESS TİME<span> GYM</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#programlar">Programlar</a></li>
+            <li><a href="#fiyatlar">Paketler</a></li>
+            <li><a href="#bmi">VKİ Hesapla</a></li>
+        </ul>
+        <a href="#fiyatlar" class="btn-primary">Aramıza Katıl</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1> DAHA FAZLASI İÇİN SINIRLARINI <span>ZORLA</span>, GÜCÜNÜ KEŞFET</h1>
+            <p>Modern ekipmanlar, profesyonel antrenörler ve kişiye özel beslenme programları ile hedeflerinize ulaşabilmeniz için Fitness Time İzmit Ailesi Daima Yanınızda!</p>
+            <a href="#fiyatlar" class="btn-primary">Ücretsiz Deneme Al</a>
+        </div>
+    </section>
+
+    <!-- PROGRAMLAR -->
+    <section class="section" id="programlar">
+        <h3 class="section-title">ANTRENMAN <span>PROGRAMLARI</span></h3>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Kas Yoğunluğu ve Kuvvet</h3>
+                <p>Hipertrofi odaklı özel ağırlık antrenmanları ile kas kütleni artır ve güçlen.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Kardiyo & Kondisyon</h3>
+                <p>Yağ yakımını hızlandıran high-intensity HIIT ve dayanıklılık egzersizleri.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-stopwatch-20"></i>
+                <h3>Personal Training</h3>
+                <p>Eğitmenle birebir çalışma imkanıyla gelişimin her anını takip eden kişiye özel olarak uzmanlarımızca tasarlanmış kişisel koçluk hizmeti.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÜYELİK PAKETLERİ -->
+    <section class="section" id="fiyatlar">
+        <h3 class="section-title">ÜYELİK <span>PAKETLERİ</span></h3>
+        <div class="grid-container">
+            <div class="pricing-card featured">
+                <h3>Aylık Paket</h3>
+                <div class="price">₺1.500 <span>/ ay</span></div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i>Tüm Alanlara Sınırsız Erişim</li>
+                    <li><i class="fa-solid fa-check"></i>Kişiye Özel Antrenman Programları</li>
+                    <li><i class="fa-solid fa-check"></i>1 Ay Geçerli Üyelik</li>
+                </ul>
+                <a href="#" class="btn-primary">Hemen Başla</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>6 Aylık Paket</h3>
+                <div class="price">6600₺ <span>1100₺/ ay</span></div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i>Tüm Alanlara Sınırsız Erişim</li>
+                    <li><i class="fa-solid fa-check"></i>Kişiye Özel Antrenman Programları</li>
+                    <li><i class="fa-solid fa-check"></i>6 Ay Geçerli Üyelik</li>
+                </ul>
+                <a href="#" class="btn-primary">En Popüler</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Yıllık Paket</h3>
+                <div class="price">12000₺ <span>1000₺/ ay</span></div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i>Tüm Alanlara Sınırsız Erişim</li>
+                    <li><i class="fa-solid fa-check"></i>Kişiye Özel Antrenman Programları</li>
+                    <li><i class="fa-solid fa-check"></i>12 Ay Geçerli Üyelik</li>
+                </ul>
+                <a href="#" class="btn-primary">Avantajlı Seçenek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI HESAPLAMA WIDGET -->
+    <section class="section" id="bmi">
+        <h2 class="section-title">VÜCUT KİTLE İNDEKSİ <span>(VKİ) HESAPLA</span></h2>
+        <div class="bmi-box">
+            <div class="bmi-inputs">
+                <input type="number" id="weight" placeholder="Kilonuz (kg)">
+                <input type="number" id="height" placeholder="Boyunuz (cm)">
+            </div>
+            <button onclick="calculateBMI()" class="btn-primary" style="width: 100%;">Hesapla</button>
+            <div id="bmiResult"></div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Kolon 1: Marka ve Hakkında -->
+            <div class="footer-box">
+                <a href="#" class="footer-logo">FİTNESS TİME<span> GYM</span></a>
+                <p>İzmit merkezde bulunan spor salonumuzda, hedeflerinize ulaşabilmeniz için profesyonel ekipmanlar ve uzman eğitmen kadromuzla hizmetinizdeyiz.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fitnesstimeizmit/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/fitnesstimeizmit/?locale=tr_TR" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/905000000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Kolon 3: Çalışma Saatleri -->
+            <div class="footer-box">
+                <h3>Çalışma <span>Saatleri</span></h3>
+                <ul class="hours-list">
+                    <li><span>Pazartesi - Cumartesi</span>09.00 - 22.00</li>
+                    <li><span>Pazar:</span>12.00 - 18.00</li>
+                </ul>
+            </div>
+
+            <!-- Kolon 4: İletişim Bilgileri -->
+            <div class="footer-box">
+                <h3>İletişim <span>Bilgileri</span></h3>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> Çukurbağ, İnönü Cd. No:133/1, 41300 İzmit/Kocaeli</p>
+                    <p><i class="fa-solid fa-phone"></i> +90 (262) 000 00 00</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@fitnesstimeizmit.com</p>
+                </div>
+            </div>
+
+            <!-- Tam Genişlik Yatay Harita Alanı -->
+            <div class="footer-map-full">
+                <h3>Salonumuzun <span>Konumu</span></h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5727145781326!2d29.9324!3d40.7675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4513197f26d3%3A0x6a1a123456789abc!2zw4d1a3VyYmHFnywgxLBuw7Zuw7EgQ2QuIE5vOjEzMy8xLCA0MTMwMCDEs3ptaXQvS29jYWVsaQ!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                    width="100%" 
+                    height="280" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </footer>
+
+   <div class="footer-bottom">
+            <p>&copy; 2026 Fitness Time İzmit - Tüm Hakları Saklıdır.</p>
+   </div>
+
+    <!-- Dışarıdan Bağlanan JS Dosyası -->
+    <script src="script.js"></script>
+</body>
+</html>
